@@ -1,0 +1,19 @@
+print ('Compras')
+valor = float(input('digite o valor do produto: '))
+quantidade = float(input('quantidade de produto comprado: '))
+
+resultado = valor * quantidade
+desconto10 = resultado * 0.1
+desconto20 = resultado * 0.2
+desconto30 = resultado * 0.3
+desconto40 = resultado * 0.4
+if resultado < 100:
+    print ('O valor da conta é de R$ ' ,(resultado))
+elif resultado > 100 and resultado < 199:
+    print ('O valor da conta é de R$ ' ,(resultado - desconto10))
+elif resultado > 200 and resultado < 299:
+    print ('O valor da conta é de R$ ',(resultado - desconto20))
+elif resultado > 300 and resultado < 400:
+    print ('O valor da conta é de R$ ' ,(resultado - desconto30))
+else:
+    print ('O valor da conta é de R$ ' , (resultado - desconto40))
